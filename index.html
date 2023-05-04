@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <h2>Demo External JavaScript</h2>
+
+    <p id="demo">Umbrella.</p>
+
+    <button class="btn" type="button" onclick="myFunction()">Try it</button> -->
+    <script src="./index.js"></script>
+
+    <div class="umbrella-image" id="umbrella-back">
+      <img
+        class="umbrella"
+        id="umb"
+        src="./assets/Blue umbrella.png"
+        alt="blue umbrella"
+      />
+
+      <!-- <img src="./assets/big-loader.svg" alt=" bigloader" id="big-loader" /> -->
+      <svg
+        version="1.1"
+        id="big-loader"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100px"
+        height="100px"
+        viewBox="0 0 50 50"
+        style="enable-background: new 0 0 50 50"
+        xml:space="preserve"
+      >
+        <path
+          fill="#000"
+          d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
+        >
+          <animateTransform
+            attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 25 25"
+            to="360 25 25"
+            dur="0.6s"
+            repeatCount="indefinite"
+          />
+        </path>
+      </svg>
+
+      <div class="colorPallete">
+        <h3>Custom Umbrella</h3>
+        <p>Choose your color</p>
+        <div class="color-btn">
+          <button
+            class="btn-pink"
+            id="pink"
+            value="Hello"
+            onclick="paintPink()"
+          ></button>
+          <button class="btn-blue" id="blue" onclick="paintBlue()"></button>
+          <button
+            class="btn-yellow"
+            id="yellow"
+            onclick=" paintYellow()"
+          ></button>
+        </div>
+        <div id="box">
+          <p class="item1">Customize Your Umbrella</p>
+          <p class="item2">Upload a logo for instant preview</p>
+          <p class="item3">.png and .jpg files only. Max file size is 5MB</p>
+        </div>
+        <div>
+          <label class="custom-file-upload" id="label-back">
+            <img
+              src="./assets/upload_icon.svg"
+              alt="lable-icon"
+              id="label-icon"
+            />
+            <input type="file" id="input-back" onchange="displayPreloader()" />
+            <span id="span-text">Upload logo</span>
+          </label>
+          <!-- <input
+            type="button"
+            value="Upload Logo"
+            class="input-icon"
+            id="input-back"
+            onclick="uploadFunction()"
+          /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
